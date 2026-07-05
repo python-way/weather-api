@@ -55,7 +55,7 @@ def weather(city_name:str):
                 params={
                     "unitGroup": "us",
                     "include": "current",
-                    "key": "QT6PTFYEL96UJ8S7UBC2BL8UR",
+                    "key": os.environ.get("WEATHER_API_KEY"),
                     "contentType": "json",
                     },
                 timeout=5,
